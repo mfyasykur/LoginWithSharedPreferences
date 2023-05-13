@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:background="#ffe49c"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logo_boledgeseng"/>
+
+    <EditText
+        android:id="@+id/edit_username_login"
+        style="@style/EditTextLogin"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/edit_password_login"
+        style="@style/EditTextLogin"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/BtnLogin"
+        android:text="Login"/>
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/BtnLogin"
+        android:text="Register"/>
+
+</LinearLayout>

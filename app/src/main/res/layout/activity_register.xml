@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:background="#ffe49c"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_boledgeseng"/>
+
+    <EditText
+        android:id="@+id/edit_fullname_register"
+        style="@style/EditTextLogin"
+        android:hint="Nama Lengkap"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/edit_email_register"
+        style="@style/EditTextLogin"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/edit_password_register"
+        style="@style/EditTextLogin"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_submit_register"
+        style="@style/BtnLogin"
+        android:text="Register"
+        android:onClick="registerMe"/>
+    <Button
+        android:id="@+id/btn_cancel_register"
+        style="@style/BtnLogin"
+        android:text="Cancel"
+        android:onClick="cancelme"/>
+
+</LinearLayout>
